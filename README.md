@@ -30,7 +30,7 @@ If a backend or frontend team pushes a **Major Feature** without subsequently up
 
 1.  **The Trigger**: A developer runs `git push` on your repository.
 2.  **The Intercept**: GitHub fires a JSON Webhook payload across the internet to your Cloudflare Tunnel.
-3.  **The Verification**: GitSentinel intercepts the payload, verifying the SHA-256 HMAC signature using your secret key.
+3.  **The Verification**: Git4Change intercepts the payload, verifying the SHA-256 HMAC signature using your secret key.
 4.  **The Engine**: Discards branches/deleted commits and pipes the raw commit messages into `analyzerService.js`.
 5.  **The Verdict**: The Agent determines the category. If `Features > 0` AND the `readmeModified` flag is `false`, it builds an alert packet.
 6.  **The Dispatch**: `notificationService.js` routes the beautifully formatted markdown packet to your configured Discord Channel and/or Email.
