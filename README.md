@@ -4,9 +4,9 @@
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 [![Discord Webhooks](https://img.shields.io/badge/Discord-Webhooks-5865F2?logo=discord)](https://discord.com/)
 
-GitSentinel is a self-hosted, offline, Zero-Cost AI alternative agent that listens to GitHub pushes, categorizes code changes using a high-speed NLP Rule-Based Engine, and proactively ensures development teams never lose documentation context. 
+Git4Change is a self-hosted, offline, Zero-Cost AI alternative agent that listens to GitHub pushes, categorizes code changes using a high-speed NLP Rule-Based Engine, and proactively ensures development teams never lose documentation context. 
 
-If a backend or frontend team pushes a **Major Feature** without subsequently updating the repository's `README.md`, GitSentinel instantly fires a richly formatted alert to your team's Discord server or Email inbox, summarizing the exact commits and pinging the team to document their changes.
+If a backend or frontend team pushes a **Major Feature** without subsequently updating the repository's `README.md`, Git4Change instantly fires a richly formatted alert to your team's Discord server or Email inbox, summarizing the exact commits and pinging the team to document their changes.
 
 ---
 
