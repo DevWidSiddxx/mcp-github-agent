@@ -39,11 +39,12 @@ If a backend or frontend team pushes a **Major Feature** without subsequently up
 
 ## 💻 Tech Stack
 
-*   **Runtime:** Node.js, Express.js
+*   **Runtime:** Node.js, Express.js,Python
 *   **Network & Security:** Crypto (HMAC SHA-256 for Webhook signature verification)
 *   **Git Operations:** GitHub Webhooks API, `@octokit/rest`
 *   **Notification Layer:** Discord REST Webhooks, `nodemailer` (SMTP)
 *   **Tunneling (Dev):** Cloudflare (`cloudflared`)
+*   **Model Context Protocol**
 
 ---
 
