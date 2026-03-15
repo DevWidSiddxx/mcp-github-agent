@@ -1,12 +1,12 @@
-# 🚀 Git4Change: Autonomous Commit Analyzer & Webhook Agent
+# 🚀 GitSense.AI: Autonomous Commit Analyzer & Webhook Agent
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 [![Discord Webhooks](https://img.shields.io/badge/Discord-Webhooks-5865F2?logo=discord)](https://discord.com/)
 
-Git4Change is a self-hosted, offline, Zero-Cost AI alternative agent that listens to GitHub pushes, categorizes code changes using a high-speed NLP Rule-Based Engine, and proactively ensures development teams never lose documentation context. 
+GitSense.AI is a self-hosted, offline, Zero-Cost AI alternative agent that listens to GitHub pushes, categorizes code changes using a high-speed NLP Rule-Based Engine, and proactively ensures development teams never lose documentation context. 
 
-If a backend or frontend team pushes a **Major Feature** without subsequently updating the repository's `README.md`, Git4Change instantly fires a richly formatted alert to your team's Discord server or Email inbox, summarizing the exact commits and pinging the team to document their changes.
+If a backend or frontend team pushes a **Major Feature** without subsequently updating the repository's `README.md`, GitSense.AI instantly fires a richly formatted alert to your team's Discord server or Email inbox, summarizing the exact commits and pinging the team to document their changes.
 
 ---
 
@@ -30,7 +30,7 @@ If a backend or frontend team pushes a **Major Feature** without subsequently up
 
 1.  **The Trigger**: A developer runs `git push` on your repository.
 2.  **The Intercept**: GitHub fires a JSON Webhook payload across the internet to your Cloudflare Tunnel.
-3.  **The Verification**: Git4Change intercepts the payload, verifying the SHA-256 HMAC signature using your secret key.
+3.  **The Verification**: GitSense.AI intercepts the payload, verifying the SHA-256 HMAC signature using your secret key.
 4.  **The Engine**: Discards branches/deleted commits and pipes the raw commit messages into `analyzerService.js`.
 5.  **The Verdict**: The Agent determines the category. If `Features > 0` AND the `readmeModified` flag is `false`, it builds an alert packet.
 6.  **The Dispatch**: `notificationService.js` routes the beautifully formatted markdown packet to your configured Discord Channel and/or Email.
